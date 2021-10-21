@@ -26,29 +26,42 @@
           />
         </div>
         <h1>Lucas</h1>
-        <a href="https://github.com/Luk4x" target="_black"
+        <a href="https://github.com/maykbrito" target="_black"
           ><img src="/images/github.svg" alt="github icon" />Luk4x</a
         >
 
         <p>
           an instructor focused on helping people start programming for web.
         </p>
-        <ul>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UCKIAhjkmwUSk6fJ-4OXZklg"
-              target="_black"
-            >
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://www.youtube.com/maykbrito" target="_black">
               <img src="/images/youtube.svg" alt="youtube icon"
             /></a>
           </li>
-          <li>
-            <a href="https://www.instagram.com/lu_k4x/" target="_black">
+          <li class="instagram">
+            <a href="https://www.instagram.com/maykbrito" target="_black">
               <img src="/images/instagram.svg" alt="instagram icon"
             /></a>
           </li>
         </ul>
       </div>
     </main>
+    <script>
+      const linksSocialMedia = {
+        github: 'Luk4x',
+        youtube: 'channel/UCKIAhjkmwUSk6fJ-4OXZklg',
+        instagram: 'lu_k4x'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+        }
+      }
+
+      changeSocialMediaLinks()
+    </script>
   </body>
 </html>
