@@ -12,13 +12,13 @@
 </table>
 <br>
 
-# 📛 Github badge
+# 📛 Github Badge Project
 
 <div align="center">
   <img src="./images/result.png" alt="challenge-result" />
 </div>
 
-> Acesse o projeto online [AQUI](https://luk4x.github.io/nlw-Heat-Origin-/)
+> Acesse o projeto online **[AQUI](https://luk4x.github.io/nlw-Heat-Origin-/)**
 
 ## 🚀 Tecnologias Utilizadas
 
